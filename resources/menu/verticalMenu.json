@@ -1,0 +1,67 @@
+{
+  "menu": [
+    {
+      "menuHeader": "Dashboard"
+    },
+    {
+      "url": "/DashBoard",
+      "name": "DashBoard",
+      "icon": "menu-icon tf-icons ti ti-dashboard",
+      "slug": "DashBoard.index"
+    },
+    {
+      "menuHeader": "จัดการการประชาสัมพันธ์"
+    },
+    {
+      "url": "/page-2",
+      "name": "จัดการข่าวประชาสัมพันธ์",
+      "icon": "menu-icon tf-icons ti ti-article",
+      "slug": "pages-page-2"
+    },
+    {
+      "menuHeader": "จัดการข้อมูล"
+    },
+    {
+      "name": "จัดการข้อมูลช่วงอายุ",
+      "icon": "menu-icon tf-icons ti ti-baby-carriage",
+      "slug": "pages",
+      "submenu": [
+        {
+          "url": "/page-2",
+          "name": "จัดการช่วงอายุ",
+          "slug": "pages-page-2"
+        },
+        {
+          "url": "/page-2",
+          "name": "จัดการข้อมูลอาหาร",
+          "slug": "laravel-example-user-management"
+        },
+        {
+          "url": "/page-2",
+          "name": "จัดการพฤติกรรมการกินอาหาร",
+          "slug": "laravel-example-user-management"
+        }
+      ]
+    },
+    {
+      "url": "/GrowthAnalyst",
+      "name": "จัดการข้อมูลเจริญเติบโต",
+      "icon": "menu-icon tf-icons ti ti-article",
+      "slug": "GrowthAnalyst.index"
+    },
+
+    {
+      "url": "/KnowLedge",
+      "name": "จัดการข้อมูลความรู้",
+      "icon": "menu-icon tf-icons ti ti-book-2",
+      "slug": "KnowLedge.index"
+    },
+
+    {
+      "url": "/KnowLedgeGroup",
+      "name": "จัดการข้อมูลกลุ่มความรู้",
+      "icon": "menu-icon tf-icons ti ti-book-2",
+      "slug": "KnowLedgeGroup.index"
+    }
+  ]
+}
