@@ -13,55 +13,55 @@
       "menuHeader": "จัดการการประชาสัมพันธ์"
     },
     {
-      "url": "/page-2",
-      "name": "จัดการข่าวประชาสัมพันธ์",
-      "icon": "menu-icon tf-icons ti ti-article",
-      "slug": "pages-page-2"
-    },
-    {
       "menuHeader": "จัดการข้อมูล"
     },
     {
-      "name": "จัดการข้อมูลช่วงอายุ",
+      "name": "วิเคราะห์การเติบโต",
       "icon": "menu-icon tf-icons ti ti-baby-carriage",
-      "slug": "pages",
+      "slug": "GrowthAnalyst",
       "submenu": [
         {
-          "url": "/page-2",
-          "name": "จัดการช่วงอายุ",
-          "slug": "pages-page-2"
+          "url": "/GrowthAnalyst",
+          "name": "วิเคราะห์สัดส่วน",
+          "slug": "GrowthAnalyst.index"
+        }
+      ]
+    },
+
+    {
+      "name": "จัดการข้อมูลความรู้",
+      "icon": "menu-icon tf-icons ti ti-baby-carriage",
+      "slug": "KnowLedge",
+      "submenu": [
+        {
+          "url": "/KnowLedge",
+          "name": "จัดการความรู้",
+          "slug": "KnowLedge.index"
         },
         {
-          "url": "/page-2",
-          "name": "จัดการข้อมูลอาหาร",
-          "slug": "laravel-example-user-management"
-        },
-        {
-          "url": "/page-2",
-          "name": "จัดการพฤติกรรมการกินอาหาร",
-          "slug": "laravel-example-user-management"
+          "url": "/KnowLedgeGroup",
+          "name": "จัดการกลุ่มความรู้",
+          "slug": "KnowLedgeGroup.index"
         }
       ]
     },
     {
-      "url": "/GrowthAnalyst",
-      "name": "จัดการข้อมูลเจริญเติบโต",
-      "icon": "menu-icon tf-icons ti ti-article",
-      "slug": "GrowthAnalyst.index"
+      "url": "/AnalysisGrowthChartSrc",
+      "name": "AnalysisGrowthChartSrc",
+      "icon": "menu-icon tf-icons ti ti-dashboard",
+      "slug": "AnalysisGrowthChartSrc.index"
     },
-
     {
-      "url": "/KnowLedge",
-      "name": "จัดการข้อมูลความรู้",
-      "icon": "menu-icon tf-icons ti ti-book-2",
-      "slug": "KnowLedge.index"
+      "url": "/Hospital",
+      "name": "ข้อมูลโรงพยาบาล",
+      "icon": "menu-icon tf-icons ti ti-dashboard",
+      "slug": "Hospital.index"
     },
-
     {
-      "url": "/KnowLedgeGroup",
-      "name": "จัดการข้อมูลกลุ่มความรู้",
-      "icon": "menu-icon tf-icons ti ti-book-2",
-      "slug": "KnowLedgeGroup.index"
+      "url": "/News",
+      "name": "ข้อมูลข่าว",
+      "icon": "menu-icon tf-icons ti ti-dashboard",
+      "slug": "News.index"
     }
   ]
 }

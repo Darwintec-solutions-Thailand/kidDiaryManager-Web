@@ -7,6 +7,9 @@ use App\Http\Controllers\DashBoardController;
 use App\Http\Controllers\GrowthAnalystController;
 use App\Http\Controllers\KnowLedgeController;
 use App\Http\Controllers\KnowLedgeGroupController;
+use App\Http\Controllers\AnalysisGrowthChartSrcController;
+use App\Http\Controllers\HospitalController;
+use App\Http\Controllers\NewsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -50,3 +53,26 @@ Route::post('/getKnowLedgeGroup', [KnowLedgeGroupController::class, 'getKnowLedg
 Route::post('/storeKnowLedgeGroup', [KnowLedgeGroupController::class, 'store'])->name('KnowLedgeGroup.store');
 Route::post('/destroyKnowLedgeGroup', [KnowLedgeGroupController::class, 'destroy'])->name('KnowLedgeGroup.destroy');
 Route::post('/getDataEditKnowLedgeGroup', [KnowLedgeGroupController::class, 'getDataById'])->name('KnowLedgeGroup.getDataEdit');
+
+
+Route::get('/AnalysisGrowthChartSrc', [AnalysisGrowthChartSrcController::class, 'index'])->name('AnalysisGrowthChartSrc.index');
+Route::post('/getAnalysisGrowthChartSrc', [AnalysisGrowthChartSrcController::class, 'getAnalysisGrowthChartSrc'])->name('AnalysisGrowthChartSrc.getData');
+Route::post('/storeAnalysisGrowthChartSrc', [AnalysisGrowthChartSrcController::class, 'store'])->name('AnalysisGrowthChartSrc.store');
+Route::post('/destroyAnalysisGrowthChartSrc', [AnalysisGrowthChartSrcController::class, 'destroy'])->name('AnalysisGrowthChartSrc.destroy');
+Route::post('/getDataEditAnalysisGrowthChartSrc', [AnalysisGrowthChartSrcController::class, 'getDataById'])->name('AnalysisGrowthChartSrc.getDataEdit');
+
+Route::get('/Hospital', [HospitalController::class, 'index'])->name('Hospital.index');
+Route::post('/getHospital', [HospitalController::class, 'getHospital'])->name('Hospital.getData');
+Route::post('/storeHospital', [HospitalController::class, 'store'])->name('Hospital.store');
+Route::post('/destroyHospital', [HospitalController::class, 'destroy'])->name('Hospital.destroy');
+Route::post('/getDataEditHospital', [HospitalController::class, 'getDataById'])->name('Hospital.getDataEdit');
+
+
+Route::get('/News', [NewsController::class, 'index'])->name('News.index');
+Route::get('/showNews', [NewsController::class, 'showNews'])->name('News.showNews');
+Route::get('/showNews/{id}', [NewsController::class, 'showNewsById'])->name('News.showNewsById');
+Route::post('/getNews', [NewsController::class, 'getNews'])->name('News.getData');
+Route::post('/storeNews', [NewsController::class, 'store'])->name('News.store');
+Route::post('/destroyNews', [NewsController::class, 'destroy'])->name('News.destroy');
+Route::post('/getDataEditNews', [NewsController::class, 'getDataById'])->name('News.getDataEdit');
+
